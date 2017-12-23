@@ -1,0 +1,6 @@
+<shape android:shape="oval"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="#ccc" />
+    <padding android:bottom="28dp" android:left="28dp" android:right="28dp" android:top="28dp" />
+    <stroke android:color="#303030" android:dashGap="10dp" android:dashWidth="10dp" android:width="5dp" />
+</shape>

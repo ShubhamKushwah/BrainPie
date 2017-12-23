@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_shape"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/are_you_sure_QD"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="Are you Sure !"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="#fff"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <TextView
+        android:id="@+id/all_progress_lost_text_QD"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:text="All the progress in this game will be lost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/no_btn_QD"
+            android:text="No"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#303030"
+            android:background="@drawable/custom_continue_button"
+            android:onClick="no_btn_pressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/yes_btn_TUD"
+            android:text="Yes"
+            android:layout_marginStart="5dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="@drawable/custom_exit_button"
+            android:onClick="yes_btn_pressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_shape"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pause_text"
+        android:text="Game Paused"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:id="@+id/white_line_pause_menu"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <TextView
+        android:id="@+id/music_vol_text"
+        android:text="Music Volume"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:max="20"
+        android:progress="12"
+        android:id="@+id/music_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/sfx_vol_text"
+        android:text="SFX Volume"
+        android:textSize="15sp"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:max="20"
+        android:progress="15"
+        android:id="@+id/sfx_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:onClick="openStore"
+        android:background="@drawable/dialog_shape"
+        android:layout_width="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/store_text_pause_dialog"
+            android:text="Store"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <ImageView
+            android:id="@+id/store_image_pause_dialog"
+            app:srcCompat="@drawable/store_icon"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitCenter"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/resume_btn"
+            android:text="Resume"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="#303030"
+            android:background="@drawable/custom_continue_button"
+            android:onClick="resumeButtonPressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/quit_btn"
+            android:text="Quit"
+            android:layout_marginStart="5dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="@drawable/custom_exit_button"
+            android:onClick="quitButtonPressedPauseDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
